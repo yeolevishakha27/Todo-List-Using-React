@@ -1,16 +1,60 @@
-# React + Vite
+# ✨ React ToDo List App  
+A beautifully designed and fully functional **To-Do List Application** built using **React**.  
+This app includes advanced features such as editing, filtering, drag & drop sorting, localStorage persistence, and light/dark mode.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+(If deployed, add your link here)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📸 Screenshots
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 📝 Main UI
+![Screenshot 1](ADD_IMAGE_LINK_HERE)
 
-## Expanding the ESLint configuration
+### 🔍 Filtered View (Pending / Done)
+![Screenshot 2](ADD_IMAGE_LINK_HERE)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🌙 Light Mode
+![Screenshot 3](ADD_IMAGE_LINK_HERE)
+
+---
+
+## ⭐ Features
+
+### 🔹 Core Features
+- Add new tasks  
+- Delete tasks  
+- Mark tasks as Done / Undo  
+- Mark all tasks as Done  
+- Edit existing tasks  
+
+### 🔹 Advanced Features
+- Filter tasks:
+  - **All**
+  - **Pending**
+  - **Done**
+- Drag and drop task sorting  
+- Light / Dark mode toggle  
+- Tasks saved in **localStorage**, so they persist after refresh  
+- Smooth and clean UI with animations  
+
+---
+
+## 🧠 How It Works (Simple Explanation)
+
+### ✔ React State (`useState`)
+Used to store tasks, input value, filter mode, theme, editing state, and drag state.
+
+### ✔ `map()`
+Used to display all tasks dynamically from the state.
+
+### ✔ `filter()`
+Used to remove tasks and filter them by **pending/done/all**.
+
+### ✔ `localStorage`
+We save the tasks as:
+```js
+localStorage.setItem("todos-react", JSON.stringify(todos));
