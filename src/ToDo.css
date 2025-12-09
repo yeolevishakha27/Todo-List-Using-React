@@ -1,0 +1,279 @@
+/* ROOT APP BACKGROUND (for theme) */
+.app-root {
+  min-height: 100vh;
+}
+
+/* Dark / Light wrapper */
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.app.dark {
+  background: #111111;
+}
+
+.app.light {
+  background: #f2f2f7;
+}
+
+/* Main Card */
+.todo-container {
+  width: 380px;
+  padding: 25px 25px 20px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header row: title + theme switch */
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.title {
+  color: #4a4a4a;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background: #efefef;
+  color: #333;
+  transition: 0.3s;
+}
+
+.theme-toggle:hover {
+  background: #dedede;
+}
+
+/* Input row */
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #dcdcdc;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+  background: #2f2f2f;
+  color: #ffffff;
+}
+
+.app.light .todo-input {
+  background: #ffffff;
+  color: #222;
+}
+
+.todo-input::placeholder {
+  color: #cfcfcf;
+}
+
+.todo-input:focus {
+  border-color: #6a5acd;
+  box-shadow: 0 0 6px rgba(106, 90, 205, 0.4);
+}
+
+/* Add button */
+.add-btn {
+  padding: 12px 20px;
+  background: #6a5acd;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+
+.add-btn:hover {
+  background: #574ab8;
+}
+
+/* Filter buttons */
+.filter-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  background: #f3f3f3;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #111111;
+}
+
+.filter-btn:hover {
+  background: #e5e5e5;
+}
+
+.filter-btn.active {
+  background: #6a5acd;
+  color: white;
+  border-color: #6a5acd;
+}
+
+/* List */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* each item */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: #f3f3ff;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border-left: 5px solid #6a5acd;
+  transition: 0.25s ease;
+  box-sizing: border-box;
+}
+
+.todo-item:hover {
+  background: #eaeaff;
+  transform: translateX(4px);
+}
+
+.item-done {
+  border-left-color: #4caf50;
+}
+
+/* Text */
+.todo-text {
+  flex-grow: 1;
+  font-size: 15px;
+  color: #333;
+  margin-right: 8px;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Button group in each item */
+.btn-group {
+  display: flex;
+  gap: 6px;
+}
+
+/* Buttons inside items */
+.done-btn,
+.edit-btn,
+.delete-btn,
+.save-btn,
+.cancel-btn {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+/* Colors */
+.done-btn {
+  background: #4caf50;
+  color: white;
+}
+
+.done-btn:hover {
+  background: #3d8e41;
+}
+
+.edit-btn {
+  background: #ffb74d;
+  color: #333;
+}
+
+.edit-btn:hover {
+  background: #ffa726;
+}
+
+.delete-btn {
+  background: #ff4d4d;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #e04444;
+}
+
+.save-btn {
+  background: #6a5acd;
+  color: white;
+}
+
+.save-btn:hover {
+  background: #574ab8;
+}
+
+.cancel-btn {
+  background: #b0bec5;
+  color: #263238;
+}
+
+.cancel-btn:hover {
+  background: #90a4ae;
+}
+
+/* Edit input */
+.edit-input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+/* Mark all button */
+.mark-all-btn {
+  width: 100%;
+  padding: 11px;
+  background: #6a5acd;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.mark-all-btn:hover {
+  background: #5848c2;
+}
