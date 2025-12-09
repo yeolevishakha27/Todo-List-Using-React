@@ -15,10 +15,10 @@ This app includes advanced features such as editing, filtering, drag & drop sort
 ![Main View](https://github.com/yeolevishakha27/Todo-List-Using-React/blob/master/Screenshot%202025-12-09%20174958.png)
 
 ### ⏳ Pending Tasks View
-![Pending View](./images/Screenshot-2025-12-09-175015.png)
+![Pending View](https://github.com/yeolevishakha27/Todo-List-Using-React/blob/master/Screenshot%202025-12-09%20175015.png)
 
 ### ✅ Done Tasks View
-![Done View](./images/Screenshot-2025-12-09-175029.png)
+![Done View](https://github.com/yeolevishakha27/Todo-List-Using-React/blob/master/Screenshot%202025-12-09%20175029.png)
 
 ---
 
