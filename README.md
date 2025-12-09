@@ -11,14 +11,14 @@ This app includes advanced features such as editing, filtering, drag & drop sort
 
 ## 📸 Screenshots
 
-### 📝 Main UI
-![Screenshot 1](ADD_IMAGE_LINK_HERE)
+### 🏠 Main View (All Tasks)
+![Main View](./images/Screenshot-2025-12-09-174958.png)
 
-### 🔍 Filtered View (Pending / Done)
-![Screenshot 2](ADD_IMAGE_LINK_HERE)
+### ⏳ Pending Tasks View
+![Pending View](./images/Screenshot-2025-12-09-175015.png)
 
-### 🌙 Light Mode
-![Screenshot 3](ADD_IMAGE_LINK_HERE)
+### ✅ Done Tasks View
+![Done View](./images/Screenshot-2025-12-09-175029.png)
 
 ---
 
