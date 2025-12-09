@@ -12,7 +12,7 @@ This app includes advanced features such as editing, filtering, drag & drop sort
 ## 📸 Screenshots
 
 ### 🏠 Main View (All Tasks)
-![Main View](Screenshot-2025-12-09-174958.png)
+![Main View](https://github.com/yeolevishakha27/Todo-List-Using-React/blob/master/Screenshot%202025-12-09%20174958.png)
 
 ### ⏳ Pending Tasks View
 ![Pending View](./images/Screenshot-2025-12-09-175015.png)
